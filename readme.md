@@ -122,3 +122,111 @@ Fusion:Destroy()
 
 **Credit to Lucide and Latte Softworks**  
 This guide helps you effectively use Fusion to manage your UI elements! 🚀
+
+# 🎨 **USING THEMES IN FUSION**  
+
+To apply a theme, you can either run:  
+
+```lua
+Window.ModifyTheme("ThemeIdentifier")
+```
+  
+Or, when creating a window, add an argument named `Theme` and set its value (string) to the desired **Theme Identifier**:  
+
+```lua
+local Window = Fusion:CreateWindow({
+   Name = "Fusion UI",
+   Theme = "DarkBlue" -- Example Theme Identifier
+})
+```
+
+---
+
+# 🌈 **THEMES AVAILABLE**  
+
+| **Theme Name**   | **Theme Identifier** |
+|------------------|---------------------|
+| Default         | `Default`           |
+| Amber Glow     | `AmberGlow`         |
+| Amethyst       | `Amethyst`          |
+| Bloom         | `Bloom`             |
+| Dark Blue     | `DarkBlue`          |
+| Green         | `Green`             |
+| Light         | `Light`             |
+| Ocean         | `Ocean`             |
+| Serenity      | `Serenity`          |
+
+---
+
+# 🎨 **CUSTOM THEMES**  
+
+Fusion also allows you to use **custom themes** as of version **1.53**.  
+
+To create a custom theme, replace the **Theme Identifier** in `ModifyTheme` or `CreateWindow` with a **table** containing theme properties.  
+
+## **EXAMPLE CUSTOM THEME TABLE**  
+
+```lua
+local CustomTheme = {
+    TextColor = Color3.fromRGB(240, 240, 240),
+
+    Background = Color3.fromRGB(25, 25, 25),
+    Topbar = Color3.fromRGB(34, 34, 34),
+    Shadow = Color3.fromRGB(20, 20, 20),
+
+    NotificationBackground = Color3.fromRGB(20, 20, 20),
+    NotificationActionsBackground = Color3.fromRGB(230, 230, 230),
+
+    TabBackground = Color3.fromRGB(80, 80, 80),
+    TabStroke = Color3.fromRGB(85, 85, 85),
+    TabBackgroundSelected = Color3.fromRGB(210, 210, 210),
+    TabTextColor = Color3.fromRGB(240, 240, 240),
+    SelectedTabTextColor = Color3.fromRGB(50, 50, 50),
+
+    ElementBackground = Color3.fromRGB(35, 35, 35),
+    ElementBackgroundHover = Color3.fromRGB(40, 40, 40),
+    SecondaryElementBackground = Color3.fromRGB(25, 25, 25),
+    ElementStroke = Color3.fromRGB(50, 50, 50),
+    SecondaryElementStroke = Color3.fromRGB(40, 40, 40),
+            
+    SliderBackground = Color3.fromRGB(50, 138, 220),
+    SliderProgress = Color3.fromRGB(50, 138, 220),
+    SliderStroke = Color3.fromRGB(58, 163, 255),
+
+    ToggleBackground = Color3.fromRGB(30, 30, 30),
+    ToggleEnabled = Color3.fromRGB(0, 146, 214),
+    ToggleDisabled = Color3.fromRGB(100, 100, 100),
+    ToggleEnabledStroke = Color3.fromRGB(0, 170, 255),
+    ToggleDisabledStroke = Color3.fromRGB(125, 125, 125),
+    ToggleEnabledOuterStroke = Color3.fromRGB(100, 100, 100),
+    ToggleDisabledOuterStroke = Color3.fromRGB(65, 65, 65),
+
+    DropdownSelected = Color3.fromRGB(40, 40, 40),
+    DropdownUnselected = Color3.fromRGB(30, 30, 30),
+
+    InputBackground = Color3.fromRGB(30, 30, 30),
+    InputStroke = Color3.fromRGB(65, 65, 65),
+    PlaceholderColor = Color3.fromRGB(178, 178, 178)
+}
+```
+
+## **APPLYING YOUR CUSTOM THEME**  
+
+Once you’ve defined your **custom theme**, apply it like this:  
+
+```lua
+Window.ModifyTheme(CustomTheme)
+```
+
+Or, when creating the window:  
+
+```lua
+local Window = Fusion:CreateWindow({
+   Name = "Fusion UI",
+   Theme = CustomTheme
+})
+```
+
+Now, Fusion will use your custom theme instead of a preset one. 🎨✨
+
+
