@@ -91,7 +91,7 @@ local useStudio = RunService:IsStudio() or false
 
 local settingsCreated = false
 local cachedSettings
---local prompt = useStudio and require(script.Parent.prompt) or loadWithTimeout('https://raw.githubusercontent.com/SiriusSoftwareLtd/Sirius/refs/heads/request/prompt.lua')
+--local prompt = useStudio and require(script.Parent.prompt) or loadWithTimeout('https://github.com/kdfuzzy/FusionUI/blob/main/prompt.lua')
 local request = (syn and syn.request) or (fluxus and fluxus.request) or (http and http.request) or http_request or request
 
 
@@ -701,7 +701,7 @@ Fusion.DisplayOrder = 100
 LoadingFrame.Version.Text = Release
 
 -- Thanks to Latte Softworks for the Lucide integration for Roblox
-local Icons = useStudio and require(script.Parent.icons) or loadWithTimeout('https://raw.githubusercontent.com/SiriusSoftwareLtd/Fusion/refs/heads/main/icons.lua')
+local Icons = useStudio and require(script.Parent.icons) or loadWithTimeout('https://github.com/kdfuzzy/FusionUI/blob/main/icons.lua')
 -- Variables
 
 local CFileName = nil
@@ -1022,7 +1022,7 @@ function FusionLibrary:Notify(data) -- action e.g open messages
 
 		if data.Actions then
 			warn('Fusion | Not seeing your actions in notifications?')
-			print("Notification Actions are being sunset for now, keep up to date on when they're back in the discord. (sirius.menu/discord)")
+			print("Notification Actions are being sunset for now, keep up to date on when they're back in the discord. (discord.gg/fusion)")
 		end
 
 		-- Calculate textbounds and set initial values
@@ -1608,7 +1608,7 @@ function FusionLibrary:CreateWindow(Settings)
 				task.wait(math.random(180, 600))
 				FusionLibrary:Notify({
 					Title = "Fusion Interface",
-					Content = "Enjoying this UI library? Find it at sirius.menu/discord",
+					Content = "Enjoying this UI library? Find it at discord.gg/fusion",
 					Duration = 7,
 					Image = 4370033185,
 				})
@@ -3904,7 +3904,7 @@ if CEnabled and Main:FindFirstChild('Notice') then
 end
 
 if not useStudio then
-	task.spawn(loadWithTimeout, "https://raw.githubusercontent.com/SiriusSoftwareLtd/Sirius/refs/heads/request/boost.lua")
+	task.spawn(loadWithTimeout, "https://github.com/kdfuzzy/FusionUI/blob/main/boost.lua")
 end
 
 task.delay(4, function()
