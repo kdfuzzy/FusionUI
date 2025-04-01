@@ -1,9 +1,9 @@
 # 🚀 Booting the Library
 
-To load the Rayfield Library, use the following command:
+To load the Fusion Library, use the following command:
 
 ```lua
-local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local Fusion = loadstring(game:HttpGet('https://github.com/kdfuzzy/FusionUI/blob/main/source.lua'))()
 ```
 
 
@@ -14,9 +14,9 @@ Follow these steps to enable automatic configuration saving:
 ✅ Enable ConfigurationSaving in the CreateWindow function.
 ✅ Choose an appropriate FileName in the CreateWindow function.
 ✅ Select a unique flag identifier for each supported element you create.
-✅ Place Rayfield:LoadConfiguration() at the bottom of your script.
+✅ Place Fusion:LoadConfiguration() at the bottom of your script.
 
-With these steps, Rayfield will now automatically save and load your configuration settings. 🎉
+With these steps, Fusion will now automatically save and load your configuration settings. 🎉
 
 # 🏦 Fusion Interface Guide
 
