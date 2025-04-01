@@ -1,11 +1,7 @@
 --[[
 
 	Fusion Interface Suite
-	by Sirius
-
-	shlex | Designing + Programming
-	iRay  | Programming
-	Max   | Programming
+	by Fusion Delopment 
 
 ]]
 
