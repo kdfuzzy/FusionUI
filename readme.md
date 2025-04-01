@@ -30,7 +30,7 @@ local Window = Fusion:CreateWindow({
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "Fusion Interface Suite",
    LoadingSubtitle = "by Fusion",
-   Theme = "Default", -- Check https://docs.sirius.menu/fusion/configuration/themes
+   Theme = "Default", -- Check https://github.com/kdfuzzy/FusionUI/blob/main/Themes.md
 
    DisableFusionPrompts = false,
    DisableBuildWarnings = false, -- Prevents Fusion from warning when the script has a version mismatch with the interface
