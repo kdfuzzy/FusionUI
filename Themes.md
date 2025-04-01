@@ -1,4 +1,4 @@
-# 🎨 Using Themes in Fusion  
+# 🎨 **USING THEMES IN FUSION**  
 
 To apply a theme, you can either run:  
 
@@ -17,7 +17,7 @@ local Window = Fusion:CreateWindow({
 
 ---
 
-## 🌈 Themes Available  
+# 🌈 **THEMES AVAILABLE**  
 
 | **Theme Name**   | **Theme Identifier** |
 |------------------|---------------------|
@@ -33,13 +33,13 @@ local Window = Fusion:CreateWindow({
 
 ---
 
-## 🎨 Custom Themes  
+# 🎨 **CUSTOM THEMES**  
 
 Fusion also allows you to use **custom themes** as of version **1.53**.  
 
 To create a custom theme, replace the **Theme Identifier** in `ModifyTheme` or `CreateWindow` with a **table** containing theme properties.  
 
-### Example Custom Theme Table  
+## **EXAMPLE CUSTOM THEME TABLE**  
 
 ```lua
 local CustomTheme = {
@@ -85,7 +85,7 @@ local CustomTheme = {
 }
 ```
 
-### Applying Your Custom Theme  
+## **APPLYING YOUR CUSTOM THEME**  
 
 Once you’ve defined your **custom theme**, apply it like this:  
 
@@ -102,4 +102,5 @@ local Window = Fusion:CreateWindow({
 })
 ```
 
-Now, Fusion will use you
+Now, Fusion will use your custom theme instead of a preset one. 🎨✨
+
