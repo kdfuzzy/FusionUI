@@ -232,6 +232,7 @@ Now, Fusion will use your custom theme instead of a preset one. 🎨✨
 ## 🎮 Binding Keys in Fusion
 Creating a Keybind
 
+
 ```local Keybind = Tab:CreateKeybind({
    Name = "Keybind Example",
    CurrentKeybind = "Q",
@@ -241,5 +242,45 @@ Creating a Keybind
    -- The function that takes place when the keybind is pressed
    -- The variable (Keybind) is a boolean for whether the keybind is being held or not (HoldToInteract needs to be true)
    end,
-})```
+})
 
+
+# 📄 **Textual Elements in Fusion**
+
+## **Creating a Label**
+
+```lua
+local Label = Tab:CreateLabel("Label Example", 4483362458, Color3.fromRGB(255, 255, 255), false) 
+-- Title, Icon, Color, IgnoreTheme
+Lucide Icon Support
+You can now also use Lucide Icons with Fusion. To do so, replace the Image ID above 4483362458 with a string value of an icon name from Lucide Icons.
+
+lua
+Copy
+Edit
+local Label = Tab:CreateLabel("Label Example", "rewind")
+This will set the icon to a rewind symbol from Lucide Icons.
+
+For a full list of supported Lucide Icons, check Lucide Icons.
+
+Credit to Lucide and Latte Softworks.
+
+Updating a Label
+lua
+Copy
+Edit
+Label:Set("Label Example", 4483362458, Color3.fromRGB(255, 255, 255), false) 
+-- Title, Icon, Color, IgnoreTheme
+Creating a Paragraph
+lua
+Copy
+Edit
+local Paragraph = Tab:CreateParagraph({Title = "Paragraph Example", Content = "Paragraph Example"})
+Updating a Paragraph
+lua
+Copy
+Edit
+Paragraph:Set({Title = "Paragraph Example", Content = "Paragraph Example"})
+vbnet
+Copy
+Edit
